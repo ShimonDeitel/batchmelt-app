@@ -1,0 +1,42 @@
+{
+  "identifier": "batchmelt",
+  "nonRenewingSubscriptions": [],
+  "products": [],
+  "settings": {
+    "_askToBuyEnabled": false
+  },
+  "subscriptionGroups": [
+    {
+      "id": "21500000",
+      "localizations": [],
+      "name": "BatchMelt Pro",
+      "subscriptions": [
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "1.99",
+          "familyShareable": false,
+          "groupNumber": 1,
+          "internalID": "batchmelt_pro_monthly",
+          "introductoryOffer": null,
+          "localizations": [
+            {
+              "description": "Reference library of alloy melting points and shrinkage rates.",
+              "displayName": "BatchMelt Pro",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "batchmelt_pro_monthly",
+          "recurringSubscriptionPeriod": "P1M",
+          "referenceName": "BatchMelt Pro Monthly",
+          "subscriptionGroupID": "21500000",
+          "type": "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version": {
+    "major": 3,
+    "minor": 0
+  }
+}
