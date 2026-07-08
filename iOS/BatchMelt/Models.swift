@@ -8,14 +8,7 @@ struct Pour: Identifiable, Codable, Equatable {
     var moldPattern: String
     var createdDate: Date
 
-    init(
-        id: UUID = UUID(),
-        pieceName: String = "Belt Buckle",
-        alloyType: String = "Aluminum",
-        pourTemp: String = "1350",
-        moldPattern: String = "Sand - 2 part",
-        createdDate: Date = Date()
-    ) {
+    init(id: UUID = UUID(), pieceName: String = "Belt Buckle", alloyType: String = "Aluminum", pourTemp: String = "1350", moldPattern: String = "Sand - 2 part", createdDate: Date = Date()) {
         self.id = id
         self.pieceName = pieceName
         self.alloyType = alloyType
@@ -34,14 +27,7 @@ struct BMProEntry: Identifiable, Codable, Equatable {
     var shrinkPercent: String
     var createdDate: Date
 
-    init(
-        id: UUID = UUID(),
-        alloyType: String = "Aluminum",
-        meltPointF: String = "1220",
-        pourPointF: String = "1350",
-        shrinkPercent: String = "1.3",
-        createdDate: Date = Date()
-    ) {
+    init(id: UUID = UUID(), alloyType: String = "Aluminum", meltPointF: String = "1220", pourPointF: String = "1350", shrinkPercent: String = "1.3", createdDate: Date = Date()) {
         self.id = id
         self.alloyType = alloyType
         self.meltPointF = meltPointF
