@@ -11,8 +11,32 @@
     a { color: #c75a2b; }
     footer { opacity: 0.6; font-size: 0.85rem; margin-top: 48px; }
     ul { line-height: 1.8; }
-    </style></head>
+    
+  @keyframes floatOrb {
+    0%, 100% { transform: translate(0,0) scale(1); }
+    50% { transform: translate(30px,-40px) scale(1.08); }
+  }
+  @keyframes fadeUp {
+    from { opacity:0; transform: translateY(16px); }
+    to { opacity:1; transform: translateY(0); }
+  }
+  .orb {
+    position: fixed; top: -120px; right: -120px; width: 420px; height: 420px;
+    background: radial-gradient(circle, #c75a2b55 0%, #c75a2b00 70%);
+    filter: blur(10px); pointer-events: none; z-index: 0;
+    animation: floatOrb 9s ease-in-out infinite;
+  }
+  .wrap { position: relative; z-index: 1; }
+  h1 { animation: fadeUp 0.8s ease-out both; }
+  p.tagline { animation: fadeUp 0.8s ease-out 0.15s both; }
+  .feature { animation: fadeUp 0.8s ease-out both; transition: transform 0.25s ease; }
+  .feature:nth-of-type(1) { animation-delay: 0.3s; }
+  .feature:nth-of-type(2) { animation-delay: 0.45s; }
+  .feature:hover { transform: translateY(-3px); }
+  footer { animation: fadeUp 0.8s ease-out 0.6s both; }
+</style></head>
 <body>
+<div class="orb"></div>
 <div class="wrap">
 <h1>Batch Melt</h1>
 <p class="sub">Track sand-casting and metal pour sessions with alloy, temp, and mold notes.</p>
