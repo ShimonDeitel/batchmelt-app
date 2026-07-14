@@ -174,9 +174,9 @@ struct PourFormView: View {
     private func save() {
         switch mode {
         case .add:
-            store.addPour(draftPieceName, draftAlloyType, draftPourTemp, draftMoldPattern, isPro: purchases.isPro)
+            store.addPour(pieceName: draftPieceName, alloyType: draftAlloyType, pourTemp: draftPourTemp, moldPattern: draftMoldPattern, isPro: purchases.isPro)
         case .edit(let item):
-            store.updatePour(item.id, draftPieceName, draftAlloyType, draftPourTemp, draftMoldPattern)
+            store.updatePour(item.id, pieceName: draftPieceName, alloyType: draftAlloyType, pourTemp: draftPourTemp, moldPattern: draftMoldPattern)
         }
         BMHaptics.success()
         dismiss()
